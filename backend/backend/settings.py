@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS will be defined below
 
 
 # Application definition
@@ -76,6 +76,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5176",
     "https://e-learning-lessons-platform-2vndv0bfs-full-stack-project.vercel.app",
 ]
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'e-learning-lessons-platform-production.up.railway.app',
+    # Note: Vercel frontend domain should NOT be in ALLOWED_HOSTS
+]
+
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
