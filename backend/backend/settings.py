@@ -74,6 +74,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5174",
     "http://localhost:5176",
     "http://127.0.0.1:5176",
+    "https://e-learning-lessons-platform.vercel.app"
     "https://e-learning-lessons-platform-2vndv0bfs-full-stack-project.vercel.app",
 ]
 
