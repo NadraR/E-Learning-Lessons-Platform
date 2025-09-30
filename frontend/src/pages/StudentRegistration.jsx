@@ -78,7 +78,7 @@ function StudentRegistration() {
     setIsLoading(true);
 
     try {
-      const response = await api.post("students/", formData);
+      const response = await api.post("students/create/", formData);
       showToast("تم تسجيل الطالب بنجاح!", "success");
       
       // If user is logged in, redirect to groups, otherwise to login
